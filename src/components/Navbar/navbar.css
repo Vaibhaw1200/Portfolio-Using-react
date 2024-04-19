@@ -1,0 +1,128 @@
+.navbar{
+    background:rgb(0, 0,0);
+    height: 5rem;
+    width: 100vw;
+    max-width: 100%;
+    margin:0 auto;
+    padding: 1rem  2rem;
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+    top: 0;
+    z-index: 3;
+
+}
+.desktopmenu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    object-fit: cover;
+    height: 3rem;
+    width: 4rem;
+}
+.desktopMenuitems:hover{
+    color: yellow;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid yellow;
+
+}
+.desktopMenuitems{
+    margin: 1rem;
+    cursor: pointer;
+}
+.desktopmenubutton{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    color: black;
+    padding: 0 1rem;
+    border-radius: 2rem;
+    height: 5vh;
+
+}
+
+.desktopmenubutton:hover{
+    opacity: 0.7;
+}
+
+.desktopmenuicon{
+    object-fit: cover;
+    height: 1rem;
+    width: 1rem;
+    margin: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .desktopmenu {
+    display: none; 
+  }
+}
+.sideMenu {
+  display: none;
+}
+
+.sideMenuButton {
+  display: none;
+}
+
+@media only screen and (max-width: 1152px) {
+  .desktopmenu {
+    display: none;
+  }
+
+  .sideMenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    background: black;
+    padding: 1rem;
+    z-index: 2;
+  }
+
+  .sideMenuButton {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 3;
+  }
+
+  .sideMenuitems {
+    color: white;
+    margin: 0.5rem 0;
+    cursor: pointer;
+  }
+
+  .sideMenuitems:hover {
+    color: yellow;
+  }
+}
+.connectwithme button {
+  background: white;
+    margin: 1rem;
+    padding: 0.75rem 1.25rem;
+    border: none;
+     border-radius: 2rem ;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+.connectwithme button:hover {
+  background-color: #d8e21a;
+}

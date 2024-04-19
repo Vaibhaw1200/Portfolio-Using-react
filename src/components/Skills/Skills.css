@@ -1,0 +1,81 @@
+#skills{
+overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+display:flex ;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+margin: 0 auto;
+}
+.skillbarimg{
+    object-fit: cover;
+    margin-right: 2rem;
+    width: 3rem;
+    height: 3rem;
+    
+}
+.skillTitle{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+.skillDesc{
+font-weight: 200;
+font-size: 1rem;
+max-width: 50rem;
+padding: 0 2rem;
+}
+
+.skillBars{
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 80%;
+    text-align: left;
+}
+.skillBar{
+    display: flex;
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: rgb(30,30,30);
+
+}
+.skillBarText{
+    font-size: 1rem;
+    font-weight: 200;
+}
+@media only screen and (max-width: 600px) {
+    .skillbarimg {
+        margin-right: 0.5rem; /* Adjusted margin for smaller mobile screens */
+        width: 2rem; /* Adjusted width for smaller mobile screens */
+        height: 2rem; /* Adjusted height for smaller mobile screens */
+    }
+
+    .skillTitle {
+        font-size: 1.5rem; /* Adjusted font size for smaller mobile screens */
+        padding-top: 1.5rem; /* Adjusted padding for smaller mobile screens */
+        margin-bottom: 0.5rem; /* Adjusted margin for smaller mobile screens */
+    }
+
+    .skillDesc {
+        font-size: 0.8rem; /* Adjusted font size for smaller mobile screens */
+        max-width: 95%; /* Adjusted max width for smaller mobile screens */
+        padding: 0 0.5rem; /* Adjusted padding for smaller mobile screens */
+    }
+
+    .skillBars {
+        margin: 0.5rem; /* Adjusted margin for smaller mobile screens */
+        max-width: 95%; /* Adjusted max width for smaller mobile screens */
+    }
+
+    .skillBar {
+        padding: 0.75rem; /* Adjusted padding for smaller mobile screens */
+    }
+
+    .skillBarText {
+        font-size: 0.8rem; /* Adjusted font size for smaller mobile screens */
+    }
+}

@@ -1,0 +1,83 @@
+.PHeading{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+   text-align: center;
+    justify-content: center;
+}
+
+
+.cardgallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 300px; /* Adjust width as needed */
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden; /* Ensures that description doesn't overflow */
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.cardimg {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.carddescription {
+  padding: 20px;
+  background-color: #fffdfd;
+  color: black;
+}
+
+.cardtitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cardsubtitle {
+  font-size: 16px;
+  color: #666;
+}
+
+.cardtext {
+  font-size: 14px;
+  color: #444;
+}
+@media only screen and (max-width: 600px) {
+  .PHeading {
+      font-size: 1.5rem; /* Adjusted font size for smaller mobile screens */
+  }
+
+  .card {
+      width: calc(100% - 20px); /* Adjusted width for smaller mobile screens */
+  }
+
+  .carddescription {
+      padding: 5px; /* Adjusted padding for smaller mobile screens */
+  }
+
+  .cardtitle {
+      font-size: 16px; /* Adjusted font size for smaller mobile screens */
+      margin-bottom: 3px; /* Adjusted margin for smaller mobile screens */
+  }
+
+  .cardsubtitle {
+      font-size: 12px; /* Adjusted font size for smaller mobile screens */
+  }
+
+  .cardtext {
+      font-size: 10px; /* Adjusted font size for smaller mobile screens */
+  }
+}

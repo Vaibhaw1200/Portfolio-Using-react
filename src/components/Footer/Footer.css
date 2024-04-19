@@ -1,0 +1,37 @@
+.Linkss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12vh;
+  background:rgb(50,50,50);
+}
+
+.Linkss a {
+  display: block;
+  margin: 0 10px;
+}
+
+.Linkss a:hover {
+  opacity: 0.7;
+}
+
+.Linkss img {
+  width: 50px;
+  height: 50px; 
+}
+@media only screen and (max-width: 600px) {
+  .Linkss {
+    height: auto;
+    padding: 10px 0;
+    flex-wrap: wrap;
+  }
+
+  .Linkss a {
+    margin: 5px;
+  }
+
+  .Linkss img {
+    width: 40px;
+    height: 40px;
+  }
+}
